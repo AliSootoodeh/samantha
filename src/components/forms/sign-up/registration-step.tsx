@@ -8,11 +8,14 @@ import { Spinner } from '@/components/spinner'
 
 const DetailForm = dynamic(() => import('./account-details-form'), {
   ssr: false,
+  //@ts-nocheck
+  //@ts-ignore
   loading: Spinner,
 })
 
 const OTPForm = dynamic(() => import('./otp-form'), {
   ssr: false,
+  //@ts-ignore
   loading: Spinner,
 })
 
